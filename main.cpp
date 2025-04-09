@@ -135,8 +135,6 @@ public:
             String output(i+1);
             output += ": ";
             output += choices[i].text;
-output += " DBG:";
-output += choices[i].episode;
             io.print(output);
         }
     }
