@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**", // Includes headers in your project folder and subfolders
+                "/usr/include/**",
+                "/usr/include",         // Common include directory (Linux)
+                "/usr/include/c++/13",  // Example for C++ standard library (adjust version if needed)
+                "/usr/include/c++/13/**",
+                "/usr/include/x86_64-linux-gnu", // Example for architecture-specific includes
+                "/usr/include/x86_64-linux-gnu/c++/13/**",
+                "/usr/local/include",
+                "/usr/local/include/**",
+                
+                // Arduino:
+                "${workspaceFolder}/ArduinoCore-API/**"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x86",
+            "compilerPath": "/usr/bin/gcc"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Arduino Project",
+            "type": "shell",
+            "command": "./clean.sh && ./build.sh",
+            "args": [
+                // "-g",
+                // "-I/usr/include/**",
+                // "-I${workspaceFolder}/ArduinoCore-API/api",
+                // "-o",
+                // "${workspaceFolder}/main",
+                // "${workspaceFolder}/main.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}
