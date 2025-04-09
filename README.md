@@ -8,12 +8,12 @@ just run `main` executable.
 
 ## Grammar:
 ```
-EPISODE <episode>  // game is made up from EPISODE blocks
-... // each episode is a free text, except the followings:
-MEMO <memo>   // the game will remember this "memo", (game state: each memo can be defined / or not)
-IF CHOOSE <option> GOTO <episode> // player will see this option and goes the episode when selects
-IF <memo> AND CHOOSE <option> GOTO <episode> // player will see this option only if the game "remember" that memo
-IF NO <memo> AND CHOOSE <option> GOTO <episode> // player will see this only when the game did not see that memo at this point.
+EPISODE <episode>                                 // game is made up from (EPISODE ...) blocks
+...                                               // each episode is a free text, except the followings:
+MEMO <memo>                                       // the game will remember this "MEMO" when player reaches this point, (game state: each MEMO can be defined / or not)
+IF CHOOSE <option> GOTO <episode>                 // player will see this option and goes (GOTO ...) the episode when selects it. (IF CHOOSE ...)
+IF <memo> AND CHOOSE <option> GOTO <episode>      // player will see this option only if the game "remember" that MEMO (IF ...)
+IF NO <memo> AND CHOOSE <option> GOTO <episode>   // player will see this only when the game did not see that MEMO at this point. (IF NOT ...)
 ```
 
 ## Example game:
