@@ -14,12 +14,6 @@ using namespace std;
 
 #define NO_INPUT 0
 
-// // Emulate Arduino String library
-// class String: public string {
-// public:
-//     using string::string;
-//     virtual ~String() = default;
-// };
 
 // Interface for different I/O devices
 class IO {
